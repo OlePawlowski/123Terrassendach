@@ -16,13 +16,19 @@
       <img src="images/logo.webp" alt="123 Terrassendach" width="140" height="48">
     </a>
     <nav class="site-nav">
+      <a href="konfigurator.html">KONFIGURATOR</a>
       <a href="index.html#ueberdachungen">ÜBERDACHUNGEN</a>
-      <a href="index.html#kontakt">KONTAKT</a>
-      <a href="konfigurator.html" class="btn-konfigurator">KONFIGURATOR</a>
-      <div class="lang-select" aria-label="Sprache">
-        <span class="flag-de" aria-hidden="true"></span>
-        <span>DE</span>
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+      <a href="kontakt.html">KONTAKT</a>
+      <div class="lang-select" aria-label="Sprache" data-lang-select>
+        <button type="button" class="lang-select-current" aria-expanded="false" aria-haspopup="listbox" aria-label="Sprache wählen">
+          <span class="flag-de" aria-hidden="true"></span>
+          <span>DE</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+        </button>
+        <ul class="lang-select-dropdown" role="listbox" aria-label="Sprache">
+          <li><a href="#" class="lang-option lang-option-de is-current" data-lang="de" role="option"><span class="flag-de" aria-hidden="true"></span> DE</a></li>
+          <li><a href="en/datenschutz.html" class="lang-option lang-option-en" data-lang="en" role="option"><span class="flag-en" aria-hidden="true"></span> EN</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -97,7 +103,7 @@
         <ul>
           <li><a href="index.html">Start</a></li>
           <li><a href="index.html#ueberdachungen">Überdachungen</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
           <li><a href="konfigurator.html">Konfigurator</a></li>
         </ul>
       </div>

@@ -42,6 +42,82 @@
     if (e.key === "Escape" && header && header.classList.contains("nav-open")) closeNav();
   });
 
+  // Sprachumschalter: Dropdown öffnen/schließen, Auswahl anzeigen
+  document.querySelectorAll("[data-lang-select]").forEach(function (wrapper) {
+    var current = wrapper.querySelector(".lang-select-current");
+    var dropdown = wrapper.querySelector(".lang-select-dropdown");
+    var options = wrapper.querySelectorAll(".lang-option");
+    if (!current || !dropdown) return;
+
+    function open() {
+      wrapper.classList.add("is-open");
+      current.setAttribute("aria-expanded", "true");
+    }
+    function close() {
+      wrapper.classList.remove("is-open");
+      current.setAttribute("aria-expanded", "false");
+    }
+    function setCurrent(opt) {
+      options.forEach(function (o) {
+        o.classList.toggle("is-current", o === opt);
+      });
+      var flag = opt.querySelector("[class^=flag-]");
+      var lang = (opt.getAttribute("data-lang") || "de").toUpperCase();
+      var currentLabel = current.querySelectorAll("span")[1];
+      var currentFlag = current.querySelector("[class^=flag-]");
+      if (currentLabel) currentLabel.textContent = lang;
+      if (currentFlag && flag) {
+        currentFlag.className = flag.className;
+        currentFlag.setAttribute("aria-hidden", "true");
+      }
+    }
+
+    current.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (wrapper.classList.contains("is-open")) close();
+      else open();
+    });
+    options.forEach(function (opt) {
+      opt.addEventListener("click", function (e) {
+        var href = opt.getAttribute("href");
+        if (href && href !== "#") {
+          close();
+          return;
+        }
+        e.preventDefault();
+        setCurrent(opt);
+        close();
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (!wrapper.contains(e.target)) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && wrapper.classList.contains("is-open")) close();
+    });
+  });
+
+  // Kontaktformular: mailto-Fallback (ohne Backend)
+  var kontaktForm = document.getElementById("kontakt-form");
+  if (kontaktForm) {
+    kontaktForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var emailEl = kontaktForm.querySelector('input[name="email"]');
+      var messageEl = kontaktForm.querySelector('textarea[name="message"]');
+      var email = (emailEl && emailEl.value) ? emailEl.value.trim() : "";
+      var message = (messageEl && messageEl.value) ? messageEl.value.trim() : "";
+      if (!email || !message) {
+        if (kontaktForm.reportValidity) kontaktForm.reportValidity();
+        return;
+      }
+      var isEn = document.documentElement.lang === "en";
+      var subject = encodeURIComponent(isEn ? "Enquiry via 123 Terrassendach" : "Anfrage über 123 Terrassendach");
+      var bodyLabel = isEn ? "Message" : "Nachricht";
+      var body = encodeURIComponent("E-Mail: " + email + "\n\n" + bodyLabel + ":\n" + message);
+      window.location.href = "mailto:info@123terrassendach.de?subject=" + subject + "&body=" + body;
+    });
+  }
+
   // Karussell: Nächstes/Vorheriges Bild
   var carousel = document.querySelector("[data-carousel]");
   if (carousel) {
