@@ -15,7 +15,7 @@
   <!-- Header -->
   <header class="site-header">
     <a href="#" class="site-logo">
-      <img src="images/logo.jpeg" alt="123 Terrassendach" width="140" height="48" fetchpriority="high">
+      <img src="images/logo.webp" alt="123 Terrassendach" width="140" height="48" fetchpriority="high">
     </a>
     <div class="lang-select lang-select-mobile" aria-label="Sprache">
       <span class="flag-de" aria-hidden="true"></span>
@@ -44,10 +44,13 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-video-bg">
+    <div class="hero-video-bg" aria-hidden="true">
       <video autoplay muted loop playsinline preload="metadata" fetchpriority="high">
         <source src="images/hero-video.mp4" type="video/mp4">
       </video>
+    </div>
+    <div class="hero-image-bg" aria-hidden="true">
+      <img src="images/terrassendach-hero-mobil.webp" alt="" width="768" height="1024" fetchpriority="high">
     </div>
     <div class="hero-inner">
       <div class="hero-content">
@@ -62,8 +65,10 @@
         <div class="hero-trust-card">
           <div class="hero-trust-block hero-trust-block-video">
             <span class="hero-trust-label">Erleben Sie uns im Video</span>
+            <!-- Button-Preview: kurze Datei (z. B. werbevideo-preview.mp4, 10–20 Sek, komprimiert) laden; Vollversion nur auf werbevideo.html -->
             <a href="werbevideo.html" class="hero-video-cta hero-video-cta-preview">
-              <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="none" aria-hidden="true">
+              <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                <source src="images/werbevideo-preview.mp4" type="video/mp4">
                 <source src="images/werbevideo-mit-123-terrassendach-logo.mp4" type="video/mp4">
               </video>
               <span class="hero-video-cta-overlay" aria-hidden="true"></span>
@@ -89,7 +94,7 @@
                 <span class="hero-trust-seal-rating">4.8</span>
               </div>
               <div class="hero-trust-seal hero-trust-seal-ssl">
-                <img src="images/visionwerk-ssl-siegel copy.png" alt="SSL & Datenschutz" class="hero-trust-seal-ssl-img" width="120" height="80">
+                <img src="images/visionwerk-ssl-siegel copy.webp" alt="SSL & Datenschutz" class="hero-trust-seal-ssl-img" width="120" height="80">
               </div>
             </div>
           </div>
@@ -138,7 +143,7 @@
   <!-- Qualität & Garantie -->
   <section class="section-two-col section-qualitaet" id="qualitaet">
     <div class="section-image">
-      <img src="images/qualitaet.jpg" alt="Terrassenüberdachung Qualität" width="1200" height="800" loading="lazy">
+      <img src="images/qualitaet.webp" alt="Terrassenüberdachung Qualität" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
   
@@ -152,7 +157,7 @@
   <!-- Über 16.500 – Firmengelände (2. Sektion) -->
   <section class="section-two-col section-16500 reverse" id="ueber-uns">
     <div class="section-image">
-      <img src="images/firmengelaende.jpg" alt="123 Terrassendach Firmengelände" width="1200" height="800" loading="lazy">
+      <img src="images/firmengelaende.webp" alt="123 Terrassendach Firmengelände" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <div class="section-badge section-badge-light">
@@ -168,7 +173,7 @@
   <!-- Grenzenlose Gestaltungsfreiheit -->
   <section class="section-two-col section-grenzenlose" id="erweiterungen">
     <div class="section-image">
-      <img src="images/gestaltungsfreiheit.jpg" alt="Gestaltungsfreiheit Terrassendach" width="1200" height="800" loading="lazy">
+      <img src="images/gestaltungsfreiheit.webp" alt="Gestaltungsfreiheit Terrassendach" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <h2>GRENZENLOSE GESTALTUNGSFREIHEIT</h2>
@@ -180,7 +185,7 @@
   <!-- Vom Werk zu Ihnen: Lieferung & Montage -->
   <section class="section-two-col section-vom-werk reverse" id="vom-werk">
     <div class="section-image">
-      <img src="images/vom-werk.png" alt="Fertigung im Werk" width="1200" height="800" loading="lazy">
+      <img src="images/vom-werk.webp" alt="Fertigung im Werk" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <h2>VOM WERK BIS ZUR MONTAGE</h2>
@@ -202,35 +207,35 @@
       <div class="kategorien-carousel-wrap">
         <div class="kategorien-carousel" data-carousel>
           <div class="carousel-slide active">
-            <img src="images/kategorie-carport.jpg" alt="Carport" width="1200" height="750" loading="lazy">
+            <img src="images/kategorie-carport.webp" alt="Carport" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">CARPORT</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-designline.jpg" alt="Designline" width="1200" height="750" loading="lazy">
+            <img src="images/kategorie-designline.webp" alt="Designline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">DESIGNLINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-orangeline.jpg" alt="Orangeline" width="1200" height="750" loading="lazy">
+            <img src="images/kategorie-orangeline.webp" alt="Orangeline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">ORANGELINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-skyline.jpg" alt="Skyline" width="1200" height="750" loading="lazy">
+            <img src="images/kategorie-skyline.webp" alt="Skyline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">SKYLINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-topline.jpg" alt="Topline" width="1200" height="750" loading="lazy">
+            <img src="images/kategorie-topline.webp" alt="Topline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">TOPLINE</div>
               <div class="link">MEHR LESEN</div>
@@ -261,7 +266,7 @@
   </section>
 
   <!-- JETZT STÖBERN / CTA -->
-  <section class="hero-stobern" id="onlineshop" style="background-image: url('images/hero-stobern.png');">
+  <section class="hero-stobern" id="onlineshop" style="background-image: url('images/hero-stobern.webp');">
     <div class="hero-stobern-content">
       <h2>JETZT DURCHSTARTEN</h2>
       <p class="hero-stobern-lead">Konfigurieren Sie Ihre Überdachung oder lassen Sie sich unverbindlich beraten – wir sind für Sie da.</p>
@@ -327,7 +332,7 @@
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis" aria-describedby="cookie-banner-desc">
     <div class="cookie-banner-inner">
       <div class="cookie-banner-brand">
-        <img src="images/logo.jpeg" alt="123 Terrassendach" class="cookie-banner-logo" width="100" height="34">
+        <img src="images/logo.webp" alt="123 Terrassendach" class="cookie-banner-logo" width="100" height="34">
       </div>
       <div class="cookie-banner-content">
         <p id="cookie-banner-desc" class="cookie-banner-text">
