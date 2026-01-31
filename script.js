@@ -1,6 +1,47 @@
 (function () {
   "use strict";
 
+  // Mobile-Menü: Hamburger öffnen/schließen
+  var header = document.querySelector(".site-header");
+  var navToggle = document.querySelector(".nav-toggle");
+  var siteNav = document.getElementById("site-nav");
+  var navOverlay = document.querySelector(".nav-overlay");
+  var navClose = document.querySelector(".nav-close");
+
+  function openNav() {
+    if (!header || !navToggle || !siteNav) return;
+    header.classList.add("nav-open");
+    navToggle.setAttribute("aria-expanded", "true");
+    navToggle.setAttribute("aria-label", "Menü schließen");
+    document.body.classList.add("nav-open");
+  }
+  function closeNav() {
+    if (!header || !navToggle || !siteNav) return;
+    header.classList.remove("nav-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Menü öffnen");
+    document.body.classList.remove("nav-open");
+  }
+  function toggleNav() {
+    if (header.classList.contains("nav-open")) closeNav();
+    else openNav();
+  }
+
+  if (navToggle) navToggle.addEventListener("click", toggleNav);
+  if (navOverlay) navOverlay.addEventListener("click", closeNav);
+  if (navClose) navClose.addEventListener("click", closeNav);
+  if (siteNav) {
+    siteNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNav);
+    });
+  }
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 900 && header && header.classList.contains("nav-open")) closeNav();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && header && header.classList.contains("nav-open")) closeNav();
+  });
+
   // Karussell: Nächstes/Vorheriges Bild
   var carousel = document.querySelector("[data-carousel]");
   if (carousel) {
@@ -49,4 +90,37 @@
       });
     }
   });
+
+  // Cookie-Banner (DSGVO)
+  var cookieBanner = document.getElementById("cookie-banner");
+  var cookieBtnAccept = document.getElementById("cookie-btn-accept");
+  var cookieBtnNecessary = document.getElementById("cookie-btn-necessary");
+  var cookieStorageKey = "123terrassendach-cookie-consent";
+
+  function hideCookieBanner() {
+    if (cookieBanner) cookieBanner.classList.remove("is-visible");
+  }
+  function showCookieBanner() {
+    if (cookieBanner) cookieBanner.classList.add("is-visible");
+  }
+  function setConsent(value) {
+    try {
+      localStorage.setItem(cookieStorageKey, value);
+    } catch (e) {}
+    hideCookieBanner();
+  }
+
+  if (cookieBanner) {
+    try {
+      if (!localStorage.getItem(cookieStorageKey)) showCookieBanner();
+    } catch (e) {
+      showCookieBanner();
+    }
+    if (cookieBtnAccept) {
+      cookieBtnAccept.addEventListener("click", function () { setConsent("all"); });
+    }
+    if (cookieBtnNecessary) {
+      cookieBtnNecessary.addEventListener("click", function () { setConsent("necessary"); });
+    }
+  }
 })();

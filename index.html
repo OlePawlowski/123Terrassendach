@@ -16,17 +16,29 @@
     <a href="#" class="site-logo">
       <img src="images/logo.jpeg" alt="123 Terrassendach" width="140" height="48">
     </a>
-    <nav class="site-nav">
+    <div class="lang-select lang-select-mobile" aria-label="Sprache">
+      <span class="flag-de" aria-hidden="true"></span>
+      <span>DE</span>
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <button type="button" class="nav-close" aria-label="Menü schließen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
       <a href="#ueberdachungen">ÜBERDACHUNGEN</a>
-      <a href="#erweiterungen">ERWEITERUNGEN</a>
       <a href="#kontakt">KONTAKT</a>
-      <a href="#konfigurator" class="btn-konfigurator">KONFIGURATOR</a>
+      <a href="konfigurator.html" class="btn-konfigurator">KONFIGURATOR</a>
       <div class="lang-select" aria-label="Sprache">
         <span class="flag-de" aria-hidden="true"></span>
         <span>DE</span>
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
       </div>
     </nav>
+    <div class="nav-overlay" aria-hidden="true"></div>
   </header>
 
   <!-- Hero -->
@@ -100,7 +112,7 @@
         <strong>10 JAHRE GARANTIE</strong>
         <span class="usp-desc">Auf jede Überdachung</span>
       </div>
-      <div class="usp-item">
+      <div class="usp-item usp-item-germany">
         <span class="usp-icon usp-icon-flag"><span class="flag-de" aria-hidden="true"></span></span>
         <strong>MADE IN GERMANY</strong>
         <span class="usp-desc">Gefertigt in Deutschland</span>
@@ -128,17 +140,11 @@
       <img src="images/qualitaet.jpg" alt="Terrassenüberdachung Qualität" width="1200" height="800">
     </div>
     <div class="section-content">
-      <div class="section-badge">
-        <span class="flag-de" aria-hidden="true"></span>
-        <span>DEUTSCHE QUALITÄT</span>
-      </div>
+  
       <h2>QUALITÄT, DIE SIE SEHEN UND SPÜREN</h2>
       <p>CE-zertifiziert nach DIN EN 1090, deutsche Statik, langlebige Aluminiumkonstruktionen – bei 123 Terrassendach bekommen Sie keine Kompromisse. Unsere Überdachungen halten Sonne, Regen, Schnee und Wind zuverlässig stand.</p>
       <p><strong>Auf jede Überdachung geben wir 10 Jahre Garantie.</strong> So kaufen Sie ohne Risiko.</p>
       <a href="#konfigurator" class="btn-inline">Jetzt Konfigurator starten →</a>
-      <a href="#vom-werk" class="scroll-indicator" aria-label="Weiter scrollen">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-      </a>
     </div>
   </section>
 
@@ -167,9 +173,6 @@
       <h2>GRENZENLOSE GESTALTUNGSFREIHEIT</h2>
       <p>Beleuchtung, Außenheizungen, Glasschiebedächer, Lamellendächer – alles aus einer Hand. Unser bundesweites Partnernetzwerk steht Ihnen mit Beratung vor Ort zur Seite.</p>
       <a href="#ueberdachungen" class="btn-inline">Kategorien ansehen →</a>
-      <a href="#ueberdachungen" class="scroll-indicator" aria-label="Weiter scrollen">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-      </a>
     </div>
   </section>
 
@@ -183,9 +186,6 @@
       <p>Erstklassige Materialien, zertifizierte Pulverbeschichtung und durchdachte Technik – bei uns entsteht Qualität, auf die Sie sich verlassen können.</p>
       <p><strong>Lieferung ab Werk</strong> oder bis zu Ihnen nach Hause. <strong>Montageservice durch Fachpartner</strong> oder clevere Selbstmontage – wir machen es Ihnen leicht.</p>
       <a href="#konfigurator" class="btn-inline">Überdachung konfigurieren →</a>
-      <a href="#ueberdachungen" class="scroll-indicator" aria-label="Weiter scrollen">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-      </a>
     </div>
   </section>
 
@@ -201,16 +201,37 @@
       <div class="kategorien-carousel-wrap">
         <div class="kategorien-carousel" data-carousel>
           <div class="carousel-slide active">
-            <img src="images/carport.jpg" alt="Carport" width="1200" height="750">
+            <img src="images/kategorie-carport.jpg" alt="Carport" width="1200" height="750">
             <div class="carousel-overlay">
               <div class="title">CARPORT</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/terrassendach.png" alt="Überdachung" width="1200" height="750">
+            <img src="images/kategorie-designline.jpg" alt="Designline" width="1200" height="750">
             <div class="carousel-overlay">
-              <div class="title">TERRASSENDACH</div>
+              <div class="title">DESIGNLINE</div>
+              <div class="link">MEHR LESEN</div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/kategorie-orangeline.jpg" alt="Orangeline" width="1200" height="750">
+            <div class="carousel-overlay">
+              <div class="title">ORANGELINE</div>
+              <div class="link">MEHR LESEN</div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/kategorie-skyline.jpg" alt="Skyline" width="1200" height="750">
+            <div class="carousel-overlay">
+              <div class="title">SKYLINE</div>
+              <div class="link">MEHR LESEN</div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/kategorie-topline.jpg" alt="Topline" width="1200" height="750">
+            <div class="carousel-overlay">
+              <div class="title">TOPLINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
@@ -242,9 +263,9 @@
   <section class="hero-stobern" id="onlineshop" style="background-image: url('images/hero-stobern.png');">
     <div class="hero-stobern-content">
       <h2>JETZT DURCHSTARTEN</h2>
-      <p class="hero-stobern-lead">Stöbern Sie im Shop oder lassen Sie sich unverbindlich beraten – wir sind für Sie da.</p>
+      <p class="hero-stobern-lead">Konfigurieren Sie Ihre Überdachung oder lassen Sie sich unverbindlich beraten – wir sind für Sie da.</p>
       <div class="hero-stobern-buttons">
-        <a href="#" class="btn-white">ZUM ONLINESHOP</a>
+        <a href="#konfigurator" class="btn-white">ZUM KONFIGURATOR</a>
         <a href="#kontakt" class="btn-orange">KOSTENLOS BERATEN LASSEN</a>
       </div>
     </div>
@@ -267,21 +288,32 @@
         <ul>
           <li><a href="#">Start</a></li>
           <li><a href="#ueberdachungen">Überdachungen</a></li>
-          <li><a href="#erweiterungen">Erweiterungen</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="#konfigurator">Konfigurator</a></li>
+          <li><a href="konfigurator.html">Konfigurator</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h4>ORT</h4>
+        <h4>RECHTLICHES</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4><span class="footer-heading-ort">ORT</span><span class="footer-heading-kontakt-mobile">KONTAKT</span></h4>
         <div class="footer-contact-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span>Drachenburgstraße 8, 53179<br>Bonn</span>
         </div>
-        <h4>KONTAKT</h4>
+        <h4 class="footer-heading-kontakt">KONTAKT</h4>
         <div class="footer-contact-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>0177 2926083<br>info@123terrassendach.de</span>
+          <span><a href="tel:+491772926083">0177 2926083</a></span>
+        </div>
+        <div class="footer-contact-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span><a href="mailto:info@123terrassendach.de">info@123terrassendach.de</a></span>
         </div>
       </div>
     </div>
@@ -289,6 +321,24 @@
       Copyright © 2025 | Konzept & Design: <strong>VisionWerk</strong>
     </div>
   </footer>
+
+  <!-- Cookie-Banner (DSGVO-konform) -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis" aria-describedby="cookie-banner-desc">
+    <div class="cookie-banner-inner">
+      <div class="cookie-banner-brand">
+        <img src="images/logo.jpeg" alt="123 Terrassendach" class="cookie-banner-logo" width="100" height="34">
+      </div>
+      <div class="cookie-banner-content">
+        <p id="cookie-banner-desc" class="cookie-banner-text">
+          Wir verwenden Cookies, um die Nutzung unserer Website zu erleichtern und anonyme Zugriffsstatistiken zu erheben. Notwendige Cookies sind für den Betrieb der Seite erforderlich. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+        <div class="cookie-banner-buttons">
+          <button type="button" class="cookie-banner-btn cookie-banner-btn-necessary" id="cookie-btn-necessary">Nur notwendige</button>
+          <button type="button" class="cookie-banner-btn cookie-banner-btn-accept" id="cookie-btn-accept">Alle akzeptieren</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
