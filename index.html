@@ -6,6 +6,7 @@
   <title>123 Terrassendach – Deutsche Qualität ab Werk | Über 16.500 verkauft</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="video" href="images/hero-video.mp4" type="video/mp4">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta name="theme-color" content="#1a1a1a">
@@ -14,7 +15,7 @@
   <!-- Header -->
   <header class="site-header">
     <a href="#" class="site-logo">
-      <img src="images/logo.jpeg" alt="123 Terrassendach" width="140" height="48">
+      <img src="images/logo.jpeg" alt="123 Terrassendach" width="140" height="48" fetchpriority="high">
     </a>
     <div class="lang-select lang-select-mobile" aria-label="Sprache">
       <span class="flag-de" aria-hidden="true"></span>
@@ -44,7 +45,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-video-bg">
-      <video autoplay muted loop playsinline>
+      <video autoplay muted loop playsinline preload="metadata" fetchpriority="high">
         <source src="images/hero-video.mp4" type="video/mp4">
       </video>
     </div>
@@ -62,7 +63,7 @@
           <div class="hero-trust-block hero-trust-block-video">
             <span class="hero-trust-label">Erleben Sie uns im Video</span>
             <a href="werbevideo.html" class="hero-video-cta hero-video-cta-preview">
-              <video class="hero-video-cta-bg" autoplay muted loop playsinline aria-hidden="true">
+              <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="none" aria-hidden="true">
                 <source src="images/werbevideo-mit-123-terrassendach-logo.mp4" type="video/mp4">
               </video>
               <span class="hero-video-cta-overlay" aria-hidden="true"></span>
@@ -137,7 +138,7 @@
   <!-- Qualität & Garantie -->
   <section class="section-two-col section-qualitaet" id="qualitaet">
     <div class="section-image">
-      <img src="images/qualitaet.jpg" alt="Terrassenüberdachung Qualität" width="1200" height="800">
+      <img src="images/qualitaet.jpg" alt="Terrassenüberdachung Qualität" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
   
@@ -151,7 +152,7 @@
   <!-- Über 16.500 – Firmengelände (2. Sektion) -->
   <section class="section-two-col section-16500 reverse" id="ueber-uns">
     <div class="section-image">
-      <img src="images/firmengelaende.jpg" alt="123 Terrassendach Firmengelände" width="1200" height="800">
+      <img src="images/firmengelaende.jpg" alt="123 Terrassendach Firmengelände" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <div class="section-badge section-badge-light">
@@ -167,7 +168,7 @@
   <!-- Grenzenlose Gestaltungsfreiheit -->
   <section class="section-two-col section-grenzenlose" id="erweiterungen">
     <div class="section-image">
-      <img src="images/gestaltungsfreiheit.jpg" alt="Gestaltungsfreiheit Terrassendach" width="1200" height="800">
+      <img src="images/gestaltungsfreiheit.jpg" alt="Gestaltungsfreiheit Terrassendach" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <h2>GRENZENLOSE GESTALTUNGSFREIHEIT</h2>
@@ -179,7 +180,7 @@
   <!-- Vom Werk zu Ihnen: Lieferung & Montage -->
   <section class="section-two-col section-vom-werk reverse" id="vom-werk">
     <div class="section-image">
-      <img src="images/vom-werk.png" alt="Fertigung im Werk" width="1200" height="800">
+      <img src="images/vom-werk.png" alt="Fertigung im Werk" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <h2>VOM WERK BIS ZUR MONTAGE</h2>
@@ -201,35 +202,35 @@
       <div class="kategorien-carousel-wrap">
         <div class="kategorien-carousel" data-carousel>
           <div class="carousel-slide active">
-            <img src="images/kategorie-carport.jpg" alt="Carport" width="1200" height="750">
+            <img src="images/kategorie-carport.jpg" alt="Carport" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">CARPORT</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-designline.jpg" alt="Designline" width="1200" height="750">
+            <img src="images/kategorie-designline.jpg" alt="Designline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">DESIGNLINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-orangeline.jpg" alt="Orangeline" width="1200" height="750">
+            <img src="images/kategorie-orangeline.jpg" alt="Orangeline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">ORANGELINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-skyline.jpg" alt="Skyline" width="1200" height="750">
+            <img src="images/kategorie-skyline.jpg" alt="Skyline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">SKYLINE</div>
               <div class="link">MEHR LESEN</div>
             </div>
           </div>
           <div class="carousel-slide">
-            <img src="images/kategorie-topline.jpg" alt="Topline" width="1200" height="750">
+            <img src="images/kategorie-topline.jpg" alt="Topline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
               <div class="title">TOPLINE</div>
               <div class="link">MEHR LESEN</div>
@@ -340,6 +341,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
