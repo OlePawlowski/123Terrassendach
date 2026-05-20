@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>123 Terrassendach – Deutsche Qualität ab Werk | Über 16.500 verkauft</title>
-  <meta name="description" content="123 Terrassendach – Terrassendächer und Überdachungen in deutscher Qualität ab Werk. Jetzt online konfigurieren oder unverbindlich beraten lassen. Ihr Fachbetrieb aus Bonn.">
+  <title>123 Terrassendach – Deutsche Qualität ab Werk | 30 Jahre · 16.500+ Dächer</title>
+  <meta name="description" content="123 Terrassendach – Terrassendächer in deutscher Qualität ab Werk. 30 Jahre Erfahrung, über 16.500 verkaufte Überdachungen, 10 Jahre Garantie. Jetzt online konfigurieren.">
   <link rel="icon" href="images/favicon.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="video" href="images/hero-video.mp4" type="video/mp4">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta name="theme-color" content="#1a1a1a">
+  <meta name="theme-color" content="#0c0d0e">
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <a href="#" class="site-logo">
       <img src="images/logo.webp" alt="123 Terrassendach" width="140" height="48" fetchpriority="high">
     </a>
@@ -38,10 +38,12 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-      <a href="konfigurator.html">KONFIGURATOR</a>
-      <a href="#ueberdachungen">ÜBERDACHUNGEN</a>
-      <a href="projekte.html">PROJEKTE</a>
-      <a href="kontakt.html">KONTAKT</a>
+      <a href="konfigurator.html">Konfigurator</a>
+      <a href="#qualitaet">Qualität</a>
+      <a href="#ueberdachungen">Überdachungen</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="konfigurator.html" class="btn-konfigurator">Jetzt konfigurieren</a>
       <div class="lang-select" aria-label="Sprache" data-lang-select>
         <button type="button" class="lang-select-current" aria-expanded="false" aria-haspopup="listbox" aria-label="Sprache wählen">
           <span class="flag-de" aria-hidden="true"></span>
@@ -69,18 +71,43 @@
     </div>
     <div class="hero-inner">
       <div class="hero-content">
-        <h1 class="hero-title">30 JAHRE ERFAHRUNG.<br>DEUTSCHE QUALITÄT AB WERK.</h1>
-        <p class="hero-desc">Über 16.500 zufriedene Kunden vertrauen auf unsere Aluminium-Überdachungen – gefertigt in Deutschland, geliefert ab Werk. Konfigurieren Sie Ihre Traumüberdachung in wenigen Klicks.</p>
+        <div class="hero-eyebrow">
+          <span class="flag-de" aria-hidden="true"></span>
+          <span>Made in Germany · Bonn</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line">30 Jahre Erfahrung.</span>
+          <span class="hero-title-line hero-title-accent">Deutsche Qualität ab Werk.</span>
+        </h1>
+        <p class="hero-desc">Über <strong>16.500 verkaufte Überdachungen</strong> – gefertigt in Deutschland, geliefert ab Werk oder direkt zu Ihnen. Konfigurieren Sie Ihre Traumüberdachung in wenigen Klicks.</p>
+        <div class="hero-stats" aria-label="Unsere Kennzahlen">
+          <div class="hero-stat">
+            <span class="hero-stat-value" data-count="30" data-suffix="+">30+</span>
+            <span class="hero-stat-label">Jahre Erfahrung</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-value" data-count="16500" data-suffix="+">16.500+</span>
+            <span class="hero-stat-label">Verkaufte Dächer</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">10</span>
+            <span class="hero-stat-label">Jahre Garantie</span>
+          </div>
+        </div>
         <div class="hero-buttons">
-          <a href="konfigurator.html" class="btn-primary">JETZT KONFIGURIEREN</a>
-          <a href="#ueberdachungen" class="btn-outline">ÜBERDACHUNGEN ENTDECKEN</a>
+          <a href="konfigurator.html" class="btn-primary">
+            <span>Jetzt konfigurieren</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#qualitaet" class="btn-outline">Qualität entdecken</a>
         </div>
       </div>
       <div class="hero-trust">
         <div class="hero-trust-card">
           <div class="hero-trust-block hero-trust-block-video">
             <span class="hero-trust-label">Erleben Sie uns im Video</span>
-            <!-- Button-Preview: kurze Datei (z. B. werbevideo-preview.mp4, 10–20 Sek, komprimiert) laden; Vollversion nur auf werbevideo.html -->
             <a href="werbevideo.html" class="hero-video-cta hero-video-cta-preview">
               <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
                 <source src="images/werbevideo-preview.mp4" type="video/mp4">
@@ -105,7 +132,7 @@
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 </span>
-                <span class="hero-trust-seal-rating">4.8</span>
+                <span class="hero-trust-seal-rating">4,8 Google</span>
               </div>
               <div class="hero-trust-seal hero-trust-seal-ssl">
                 <img src="images/visionwerk-ssl-siegel copy.webp" alt="SSL & Datenschutz" class="hero-trust-seal-ssl-img" width="120" height="80">
@@ -117,142 +144,246 @@
     </div>
   </section>
 
-  <!-- USP-Bar: Warum hier bestellen -->
-  <section class="usp-bar">
-    <div class="usp-bar-inner">
-      <div class="usp-item">
-        <span class="usp-icon usp-icon-number">16.500+</span>
-        <strong>VERKAUFTE ÜBERDACHUNGEN</strong>
-        <span class="usp-desc">Vertrauen von tausenden Kunden</span>
+  <!-- Vertrauensleiste -->
+  <section class="trust-strip" aria-label="Unsere Qualitätsversprechen">
+    <div class="trust-strip-inner">
+      <div class="trust-strip-item reveal">
+        <span class="trust-strip-icon trust-strip-icon-number">16.500+</span>
+        <div class="trust-strip-text">
+          <strong>Verkaufte Überdachungen</strong>
+          <span>Vertrauen von tausenden Kunden</span>
+        </div>
       </div>
-      <div class="usp-item">
-        <span class="usp-icon usp-icon-garantie" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="trust-strip-item reveal">
+        <span class="trust-strip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </span>
-        <strong>10 JAHRE GARANTIE</strong>
-        <span class="usp-desc">Auf jede Überdachung</span>
+        <div class="trust-strip-text">
+          <strong>10 Jahre Garantie</strong>
+          <span>Auf jede Überdachung</span>
+        </div>
       </div>
-      <div class="usp-item usp-item-germany">
-        <span class="usp-icon usp-icon-flag"><span class="flag-de" aria-hidden="true"></span></span>
-        <strong>MADE IN GERMANY</strong>
-        <span class="usp-desc">Gefertigt in Deutschland</span>
+      <div class="trust-strip-item reveal">
+        <span class="trust-strip-icon trust-strip-icon-flag"><span class="flag-de" aria-hidden="true"></span></span>
+        <div class="trust-strip-text">
+          <strong>Made in Germany</strong>
+          <span>Deutsche Herstellung & Statik</span>
+        </div>
       </div>
-      <div class="usp-item">
-        <span class="usp-icon usp-icon-truck" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="12" height="10"/><polygon points="13 6 17 6 21 10 21 14 13 14 13 6"/><circle cx="5" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/></svg>
+      <div class="trust-strip-item reveal">
+        <span class="trust-strip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="1" y="4" width="12" height="10"/><polygon points="13 6 17 6 21 10 21 14 13 14 13 6"/><circle cx="5" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/></svg>
         </span>
-        <strong>LIEFERUNG AB WERK</strong>
-        <span class="usp-desc">Oder direkt zu Ihnen nach Hause</span>
+        <div class="trust-strip-text">
+          <strong>Lieferung ab Werk</strong>
+          <span>Oder direkt zu Ihnen nach Hause</span>
+        </div>
       </div>
-      <div class="usp-item">
-        <span class="usp-icon usp-icon-tools" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      <div class="trust-strip-item reveal">
+        <span class="trust-strip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </span>
-        <strong>MONTAGE ODER SELBSTMONTAGE</strong>
-        <span class="usp-desc">Profis vor Ort oder DIY</span>
+        <div class="trust-strip-text">
+          <strong>Montage oder DIY</strong>
+          <span>Fachpartner oder Selbstmontage</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Qualität & Garantie -->
-  <section class="section-two-col section-qualitaet" id="qualitaet">
+  <!-- Qualitäts-Säulen -->
+  <section class="section-pillars" id="qualitaet">
+    <div class="section-pillars-inner">
+      <div class="section-header section-header-center reveal">
+        <p class="section-eyebrow">Warum 123 Terrassendach</p>
+        <h2>Qualität, die überzeugt –<br>von der Fertigung bis zur Montage</h2>
+        <p class="section-lead">Seit drei Jahrzehnten fertigen wir Aluminium-Überdachungen in Deutschland. Keine Kompromisse bei Material, Statik und Verarbeitung.</p>
+      </div>
+      <div class="pillars-grid">
+        <article class="pillar-card reveal">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Deutsche Herstellung</h3>
+          <p>CE-zertifiziert nach DIN EN 1090. Unsere Überdachungen entstehen in Deutschland – mit deutscher Statik und geprüfter Verarbeitung.</p>
+        </article>
+        <article class="pillar-card reveal">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <h3>30 Jahre Erfahrung</h3>
+          <p>Über drei Jahrzehnte Know-how in Terrassendächern, Carports und Pergolen. Was wir bauen, hält – Jahr für Jahr.</p>
+        </article>
+        <article class="pillar-card reveal">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>10 Jahre Garantie</h3>
+          <p>Auf jede Überdachung geben wir 10 Jahre Garantie. So investieren Sie ohne Risiko in Ihr Zuhause.</p>
+        </article>
+        <article class="pillar-card reveal">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="1" y="4" width="12" height="10"/><polygon points="13 6 17 6 21 10 21 14 13 14 13 6"/><circle cx="5" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/></svg>
+          </div>
+          <h3>Lieferung ab Werk</h3>
+          <p>Abholung direkt ab Werk in Bonn oder Lieferung bis vor Ihre Haustür – flexibel und zuverlässig.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualität im Detail -->
+  <section class="section-two-col section-qualitaet reveal">
     <div class="section-image">
-      <img src="images/qualitaet.webp" alt="Terrassenüberdachung Qualität" width="1200" height="800" loading="lazy">
+      <img src="images/qualitaet.webp" alt="Terrassenüberdachung – deutsche Qualität" width="1200" height="800" loading="lazy">
+      <div class="section-image-badge">
+        <span class="flag-de" aria-hidden="true"></span>
+        Made in Germany
+      </div>
     </div>
     <div class="section-content">
-  
-      <h2>QUALITÄT, DIE SIE SEHEN UND SPÜREN</h2>
-      <p>CE-zertifiziert nach DIN EN 1090, deutsche Statik, langlebige Aluminiumkonstruktionen – bei 123 Terrassendach bekommen Sie keine Kompromisse. Unsere Überdachungen halten Sonne, Regen, Schnee und Wind zuverlässig stand.</p>
-      <p><strong>Auf jede Überdachung geben wir 10 Jahre Garantie.</strong> So kaufen Sie ohne Risiko.</p>
+      <p class="section-eyebrow">Qualität im Detail</p>
+      <h2>Qualität, die Sie sehen und spüren</h2>
+      <p>Langlebige Aluminiumkonstruktionen mit zertifizierter Pulverbeschichtung – unsere Überdachungen halten Sonne, Regen, Schnee und Wind zuverlässig stand.</p>
+      <ul class="feature-list">
+        <li>CE-zertifiziert nach DIN EN 1090</li>
+        <li>Deutsche Statik & geprüfte Konstruktion</li>
+        <li>Zertifizierte Pulverbeschichtung</li>
+        <li>10 Jahre Garantie auf jede Überdachung</li>
+      </ul>
       <a href="konfigurator.html" class="btn-inline">Jetzt Konfigurator starten →</a>
     </div>
   </section>
 
-  <!-- Über 16.500 – Firmengelände (2. Sektion) -->
-  <section class="section-two-col section-16500 reverse" id="ueber-uns">
+  <!-- Über 16.500 -->
+  <section class="section-two-col section-16500 reverse reveal" id="ueber-uns">
     <div class="section-image">
-      <img src="images/firmengelaende.webp" alt="123 Terrassendach Firmengelände" width="1200" height="800" loading="lazy">
+      <img src="images/firmengelaende.webp" alt="123 Terrassendach Firmengelände Bonn" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
       <div class="section-badge section-badge-light">
         <span class="flag-de" aria-hidden="true"></span>
-        <span>BONN · MADE IN GERMANY</span>
+        <span>Bonn · Made in Germany</span>
       </div>
-      <h2>ÜBER 16.500 VERKAUFTE ÜBERDACHUNGEN – DAS SPRICHT FÜR UNS.</h2>
-      <p>Wir stehen in Bonn für Terrassendächer aus Aluminium, gefertigt in Deutschland. Attraktive Winterrabatte, Lieferung zu Ihnen nach Hause oder Abholung ab Werk – inkl. Markisen und Glasschiebeelementen. Überzeugen Sie sich selbst.</p>
-      <a href="kontakt.html" class="btn-mehr">MEHR ÜBER UNS & KONTAKT</a>
+      <h2>Über 16.500 verkaufte Überdachungen – das spricht für uns</h2>
+      <p>Wir stehen in Bonn für Terrassendächer aus Aluminium, gefertigt in Deutschland. Attraktive Winterrabatte, Lieferung zu Ihnen nach Hause oder Abholung ab Werk – inkl. Markisen und Glasschiebeelementen.</p>
+      <div class="section-highlight-stats">
+        <div class="highlight-stat">
+          <span class="highlight-stat-value" data-count="16500" data-suffix="+">16.500+</span>
+          <span class="highlight-stat-label">Verkaufte Dächer</span>
+        </div>
+        <div class="highlight-stat">
+          <span class="highlight-stat-value" data-count="30" data-suffix="+">30+</span>
+          <span class="highlight-stat-label">Jahre am Markt</span>
+        </div>
+      </div>
+      <a href="kontakt.html" class="btn-mehr">Mehr über uns & Kontakt</a>
+    </div>
+  </section>
+
+  <!-- Prozess: Werk → Montage -->
+  <section class="section-process">
+    <div class="section-process-inner">
+      <div class="section-header section-header-center reveal">
+        <p class="section-eyebrow">So arbeiten wir</p>
+        <h2>Vom Werk bis zur fertigen Überdachung</h2>
+        <p class="section-lead">Transparent, planbar und mit Festpreis – in wenigen Schritten zu Ihrer Traumüberdachung.</p>
+      </div>
+      <div class="home-process-timeline">
+        <article class="home-process-step reveal">
+          <span class="home-process-num">01</span>
+          <h3>Online konfigurieren</h3>
+          <p>Maße, Modell und Ausstattung wählen – Sie erhalten sofort Ihren individuellen Festpreis.</p>
+        </article>
+        <article class="home-process-step reveal">
+          <span class="home-process-num">02</span>
+          <h3>Fertigung im Werk</h3>
+          <p>Deutsche Herstellung mit erstklassigen Materialien und zertifizierter Pulverbeschichtung in Bonn.</p>
+        </article>
+        <article class="home-process-step reveal">
+          <span class="home-process-num">03</span>
+          <h3>Lieferung & Montage</h3>
+          <p>Abholung ab Werk, Lieferung nach Hause oder Montage durch unser Fachpartner-Netzwerk.</p>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Grenzenlose Gestaltungsfreiheit -->
-  <section class="section-two-col section-grenzenlose" id="erweiterungen">
+  <section class="section-two-col section-grenzenlose reveal" id="erweiterungen">
     <div class="section-image">
       <img src="images/gestaltungsfreiheit.webp" alt="Gestaltungsfreiheit Terrassendach" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
-      <h2>GRENZENLOSE GESTALTUNGSFREIHEIT</h2>
+      <p class="section-eyebrow">Individuell & erweiterbar</p>
+      <h2>Grenzenlose Gestaltungsfreiheit</h2>
       <p>Beleuchtung, Außenheizungen, Glasschiebedächer, Lamellendächer – alles aus einer Hand. Unser bundesweites Partnernetzwerk steht Ihnen mit Beratung vor Ort zur Seite.</p>
       <a href="#ueberdachungen" class="btn-inline">Kategorien ansehen →</a>
     </div>
   </section>
 
-  <!-- Vom Werk zu Ihnen: Lieferung & Montage -->
-  <section class="section-two-col section-vom-werk reverse" id="vom-werk">
+  <!-- Vom Werk -->
+  <section class="section-two-col section-vom-werk reverse reveal" id="vom-werk">
     <div class="section-image">
-      <img src="images/vom-werk.webp" alt="Fertigung im Werk" width="1200" height="800" loading="lazy">
+      <img src="images/vom-werk.webp" alt="Fertigung im Werk Bonn" width="1200" height="800" loading="lazy">
     </div>
     <div class="section-content">
-      <h2>VOM WERK BIS ZUR MONTAGE</h2>
+      <p class="section-eyebrow">Ab Werk in Bonn</p>
+      <h2>Vom Werk bis zur Montage</h2>
       <p>Erstklassige Materialien, zertifizierte Pulverbeschichtung und durchdachte Technik – bei uns entsteht Qualität, auf die Sie sich verlassen können.</p>
-      <p><strong>Lieferung ab Werk</strong> oder bis zu Ihnen nach Hause. <strong>Montageservice durch Fachpartner</strong> oder clevere Selbstmontage – wir machen es Ihnen leicht.</p>
+      <ul class="feature-list">
+        <li>Lieferung ab Werk oder bis zu Ihnen nach Hause</li>
+        <li>Montageservice durch zertifizierte Fachpartner</li>
+        <li>Clevere Selbstmontage mit Anleitung</li>
+      </ul>
       <a href="konfigurator.html" class="btn-inline">Überdachung konfigurieren →</a>
     </div>
   </section>
 
-  <!-- Kategorien / Überdachungen -->
+  <!-- Kategorien -->
   <section class="section-kategorien" id="ueberdachungen">
     <div class="kategorien-inner">
-      <div class="kategorien-text">
-        <h3>UNSERE ÜBERDACHUNGEN</h3>
-        <h2>ENTDECKEN SIE UNSERE KATEGORIEN</h2>
-        <p class="kategorien-lead">Carport, Terrassendach, Pergola – wählen Sie die Überdachung, die zu Ihrem Zuhause passt.</p>
-        <a href="konfigurator.html" class="btn-kategorien">JETZT KONFIGURIEREN</a>
+      <div class="kategorien-text reveal">
+        <p class="section-eyebrow">Unsere Produktlinien</p>
+        <h2>Entdecken Sie unsere Kategorien</h2>
+        <p class="kategorien-lead">Carport, Terrassendach, Pergola – wählen Sie die Überdachung, die zu Ihrem Zuhause passt. Alle Modelle in deutscher Qualität ab Werk.</p>
+        <a href="konfigurator.html" class="btn-kategorien">Jetzt konfigurieren</a>
       </div>
-      <div class="kategorien-carousel-wrap">
+      <div class="kategorien-carousel-wrap reveal">
         <div class="kategorien-carousel" data-carousel>
           <div class="carousel-slide active">
             <img src="images/kategorie-carport.webp" alt="Carport" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
-              <div class="title">CARPORT</div>
-              <div class="link">MEHR LESEN</div>
+              <div class="title">Carport</div>
+              <div class="link">Mehr erfahren</div>
             </div>
           </div>
           <div class="carousel-slide">
             <img src="images/kategorie-designline.webp" alt="Designline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
-              <div class="title">DESIGNLINE</div>
-              <div class="link">MEHR LESEN</div>
+              <div class="title">Designline</div>
+              <div class="link">Mehr erfahren</div>
             </div>
           </div>
           <div class="carousel-slide">
             <img src="images/kategorie-orangeline.webp" alt="Orangeline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
-              <div class="title">ORANGELINE</div>
-              <div class="link">MEHR LESEN</div>
+              <div class="title">Orangeline</div>
+              <div class="link">Mehr erfahren</div>
             </div>
           </div>
           <div class="carousel-slide">
             <img src="images/kategorie-skyline.webp" alt="Skyline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
-              <div class="title">SKYLINE</div>
-              <div class="link">MEHR LESEN</div>
+              <div class="title">Skyline</div>
+              <div class="link">Mehr erfahren</div>
             </div>
           </div>
           <div class="carousel-slide">
             <img src="images/kategorie-topline.webp" alt="Topline" width="1200" height="750" loading="lazy">
             <div class="carousel-overlay">
-              <div class="title">TOPLINE</div>
-              <div class="link">MEHR LESEN</div>
+              <div class="title">Topline</div>
+              <div class="link">Mehr erfahren</div>
             </div>
           </div>
         </div>
@@ -263,12 +394,15 @@
     </div>
   </section>
 
-  <!-- Konfigurator (eingebettet) -->
+  <!-- Konfigurator -->
   <section class="section-konfigurator" id="konfigurator">
     <div class="konfigurator-inner">
-      <h2 class="konfigurator-headline">Ihre Überdachung konfigurieren</h2>
-      <p class="konfigurator-lead">In wenigen Klicks zu Ihrer individuellen Lösung und Ihrem Festpreis.</p>
-      <div class="konfigurator-embed">
+      <div class="section-header section-header-center reveal">
+        <p class="section-eyebrow">Festpreis in Minuten</p>
+        <h2 class="konfigurator-headline">Ihre Überdachung konfigurieren</h2>
+        <p class="konfigurator-lead">In wenigen Klicks zu Ihrer individuellen Lösung – Made in Germany, mit 10 Jahren Garantie.</p>
+      </div>
+      <div class="konfigurator-embed reveal">
         <iframe
           src="https://terrassen-berdachung-konfigurator.vercel.app/embed.html"
           title="Terrassendach Konfigurator"
@@ -279,14 +413,17 @@
     </div>
   </section>
 
-  <!-- JETZT STÖBERN / CTA -->
+  <!-- CTA -->
   <section class="hero-stobern" id="onlineshop" style="background-image: url('images/hero-stobern.webp');">
-    <div class="hero-stobern-content">
-      <h2>JETZT DURCHSTARTEN</h2>
-      <p class="hero-stobern-lead">Konfigurieren Sie Ihre Überdachung oder lassen Sie sich unverbindlich beraten – wir sind für Sie da.</p>
+    <div class="hero-stobern-content reveal">
+      <div class="hero-stobern-text">
+        <p class="section-eyebrow section-eyebrow-light">Bereit für Ihr Terrassendach?</p>
+        <h2>Deutsche Qualität.<br>Ihr Festpreis. Jetzt starten.</h2>
+        <p class="hero-stobern-lead">Konfigurieren Sie Ihre Überdachung online oder lassen Sie sich unverbindlich von unseren Experten beraten.</p>
+      </div>
       <div class="hero-stobern-buttons">
-        <a href="konfigurator.html" class="btn-white">ZUM KONFIGURATOR</a>
-        <a href="kontakt.html" class="btn-orange">KOSTENLOS BERATEN LASSEN</a>
+        <a href="konfigurator.html" class="btn-white">Zum Konfigurator</a>
+        <a href="kontakt.html" class="btn-orange">Kostenlos beraten lassen</a>
       </div>
     </div>
   </section>
@@ -295,8 +432,12 @@
   <footer class="site-footer" id="kontakt">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="name">123 TERRASSENDACH</div>
-        <p class="slogan">Deutsche Qualität ab Werk – Überdachungen, auf die Sie sich verlassen können.</p>
+        <div class="name">123 Terrassendach</div>
+        <p class="slogan">30 Jahre Erfahrung · Deutsche Qualität ab Werk · Über 16.500 verkaufte Überdachungen</p>
+        <div class="footer-trust-badges">
+          <span class="footer-badge"><span class="flag-de" aria-hidden="true"></span> Made in Germany</span>
+          <span class="footer-badge">10 Jahre Garantie</span>
+        </div>
         <div class="footer-social">
           <a href="#" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
           <a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg></a>
@@ -304,9 +445,10 @@
         </div>
       </div>
       <div class="footer-column">
-        <h4>SEITEN</h4>
+        <h4>Seiten</h4>
         <ul>
           <li><a href="#">Start</a></li>
+          <li><a href="#qualitaet">Qualität</a></li>
           <li><a href="#ueberdachungen">Überdachungen</a></li>
           <li><a href="projekte.html">Projekte</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
@@ -314,7 +456,7 @@
         </ul>
       </div>
       <div class="footer-column">
-        <h4>RECHTLICHES</h4>
+        <h4>Rechtliches</h4>
         <ul>
           <li><a href="impressum.html">Impressum</a></li>
           <li><a href="datenschutz.html">Datenschutz</a></li>
@@ -322,12 +464,12 @@
         </ul>
       </div>
       <div class="footer-column">
-        <h4><span class="footer-heading-ort">ORT</span><span class="footer-heading-kontakt-mobile">KONTAKT</span></h4>
+        <h4><span class="footer-heading-ort">Ort</span><span class="footer-heading-kontakt-mobile">Kontakt</span></h4>
         <div class="footer-contact-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span>Drachenburgstraße 8<br>53179 Bonn</span>
         </div>
-        <h4 class="footer-heading-kontakt">KONTAKT</h4>
+        <h4 class="footer-heading-kontakt">Kontakt</h4>
         <div class="footer-contact-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span><a href="tel:+491772926083">0177 2926083</a></span>
@@ -343,7 +485,7 @@
     </div>
   </footer>
 
-  <!-- Cookie-Banner (DSGVO-konform) -->
+  <!-- Cookie-Banner -->
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis" aria-describedby="cookie-banner-desc">
     <div class="cookie-banner-inner">
       <div class="cookie-banner-brand">
