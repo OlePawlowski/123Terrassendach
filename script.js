@@ -241,11 +241,21 @@
   var cookieBtnNecessary = document.getElementById("cookie-btn-necessary");
   var cookieStorageKey = "123terrassendach-cookie-consent";
 
+  function syncCookieBannerOffset() {
+    if (!cookieBanner) return;
+    if (cookieBanner.classList.contains("is-visible") && window.innerWidth <= 768) {
+      document.body.style.paddingBottom = cookieBanner.offsetHeight + "px";
+    } else {
+      document.body.style.paddingBottom = "";
+    }
+  }
   function hideCookieBanner() {
     if (cookieBanner) cookieBanner.classList.remove("is-visible");
+    syncCookieBannerOffset();
   }
   function showCookieBanner() {
     if (cookieBanner) cookieBanner.classList.add("is-visible");
+    requestAnimationFrame(syncCookieBannerOffset);
   }
   function setConsent(value) {
     try {
@@ -266,5 +276,6 @@
     if (cookieBtnNecessary) {
       cookieBtnNecessary.addEventListener("click", function () { setConsent("necessary"); });
     }
+    window.addEventListener("resize", syncCookieBannerOffset);
   }
 })();
