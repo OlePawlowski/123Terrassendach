@@ -38,12 +38,12 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <a href="konfigurator.html">Configurator</a>
+      <a href="#konfigurator">Configurator</a>
       <a href="#qualitaet">Quality</a>
       <a href="#ueberdachungen">Canopies</a>
       <a href="projekte.html">Projects</a>
       <a href="kontakt.html">Contact</a>
-      <a href="konfigurator.html" class="btn-konfigurator">Configure now</a>
+      <a href="#konfigurator" class="btn-konfigurator">Configure now</a>
       <div class="lang-select" aria-label="Language" data-lang-select>
         <button type="button" class="lang-select-current" aria-expanded="false" aria-haspopup="listbox" aria-label="Choose language">
           <span class="flag-en" aria-hidden="true"></span>
@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="hero-buttons">
-          <a href="konfigurator.html" class="btn-primary">
+          <a href="#konfigurator" class="btn-primary">
             <span>Configure now</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
@@ -108,7 +108,7 @@
         <div class="hero-trust-card">
           <div class="hero-trust-block hero-trust-block-video">
             <span class="hero-trust-label">See us in action</span>
-            <a href="werbevideo.html" class="hero-video-cta hero-video-cta-preview">
+            <a href="#video" class="hero-video-cta hero-video-cta-preview">
               <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
                 <source src="../images/werbevideo-preview.mp4" type="video/mp4">
               </video>
@@ -139,6 +139,44 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurator – directly below hero -->
+  <section class="konfigurator-wrap" id="konfigurator" aria-labelledby="konfigurator-heading">
+    <div class="konfigurator-intro reveal">
+      <p class="section-eyebrow">Fixed price in minutes</p>
+      <h2 id="konfigurator-heading">Configure your canopy</h2>
+      <p class="konfigurator-intro-lead">Choose dimensions, model and options – get your individual fixed price instantly. Made in Germany, 10-year warranty.</p>
+    </div>
+    <iframe
+      src="https://konfigurator.ihre-firma.de"
+      title="Terrace canopy configurator"
+      loading="lazy"
+      allow="fullscreen"
+    ></iframe>
+  </section>
+
+  <!-- Promo video – homepage USP -->
+  <section class="section-home-video" id="video" aria-labelledby="home-video-heading">
+    <div class="section-home-video-inner">
+      <div class="section-home-video-text reveal">
+        <p class="section-eyebrow">Unique on the market</p>
+        <h2 id="home-video-heading">Experience terrace canopy production</h2>
+        <p class="section-home-video-lead">See how our canopies are made and installed in just one day – factory quality, everything from a single source.</p>
+        <ul class="feature-list">
+          <li>Professional installation by certified partners</li>
+          <li>Made in Germany, Bonn</li>
+          <li>Over 16,500 satisfied customers</li>
+        </ul>
+      </div>
+      <div class="section-home-video-player reveal">
+        <div class="home-video-wrapper">
+          <video controls playsinline preload="metadata" poster="../images/terrassendach-hero-mobil.jpg" title="123 Terrassendach – canopies & installation">
+            <source src="../images/werbevideo-mit-123-terrassendach-logo.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -233,7 +271,7 @@
   </section>
 
   <!-- Quality in detail (redundant with section-pillars – hidden)
-  <section class="section-two-col section-qualitaet reveal">
+  <section class="section-two-col section-qualitaet reveal" id="qualitaet">
     <div class="section-image">
       <img src="../images/qualitaet.webp" alt="Terrace canopy – German quality" width="1200" height="800" loading="lazy">
       <div class="section-image-badge">
@@ -251,7 +289,7 @@
         <li>Certified powder coating</li>
         <li>10-year warranty on every canopy</li>
       </ul>
-      <a href="konfigurator.html" class="btn-inline">Start configurator →</a>
+      <a href="#konfigurator" class="btn-inline">Start configurator →</a>
     </div>
   </section>
   -->
@@ -337,7 +375,7 @@
         <li>Installation by certified specialist partners</li>
         <li>Smart DIY assembly with instructions</li>
       </ul>
-      <a href="konfigurator.html" class="btn-inline">Configure canopy →</a>
+      <a href="#konfigurator" class="btn-inline">Configure canopy →</a>
     </div>
   </section>
 
@@ -348,7 +386,7 @@
         <p class="section-eyebrow">Our product lines</p>
         <h2>Discover our categories</h2>
         <p class="kategorien-lead">Carport, terrace canopy, pergola – choose the canopy that fits your home. All models in German quality from the factory.</p>
-        <a href="konfigurator.html" class="btn-kategorien">Configure now</a>
+        <a href="#konfigurator" class="btn-kategorien">Configure now</a>
       </div>
       <div class="kategorien-carousel-wrap reveal">
         <div class="kategorien-carousel" data-carousel>
@@ -395,25 +433,6 @@
     </div>
   </section>
 
-  <!-- Configurator -->
-  <section class="section-konfigurator" id="konfigurator">
-    <div class="konfigurator-inner">
-      <div class="section-header section-header-center reveal">
-        <p class="section-eyebrow">Fixed price in minutes</p>
-        <h2 class="konfigurator-headline">Configure your canopy</h2>
-        <p class="konfigurator-lead">Your individual solution in a few clicks – Made in Germany, with a 10-year warranty.</p>
-      </div>
-      <div class="konfigurator-embed reveal">
-        <iframe
-          src="https://terrassen-berdachung-konfigurator.vercel.app/embed.html"
-          title="Canopy configurator"
-          loading="lazy"
-          allow="fullscreen"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA -->
   <section class="hero-stobern" id="onlineshop" style="background-image: url('../images/hero-stobern.webp');">
     <div class="hero-stobern-content reveal">
@@ -423,7 +442,7 @@
         <p class="hero-stobern-lead">Configure your canopy online or get free advice from our experts.</p>
       </div>
       <div class="hero-stobern-buttons">
-        <a href="konfigurator.html" class="btn-white">To configurator</a>
+        <a href="#konfigurator" class="btn-white">To configurator</a>
         <a href="kontakt.html" class="btn-orange">Get free advice</a>
       </div>
     </div>
@@ -453,7 +472,7 @@
           <li><a href="#ueberdachungen">Canopies</a></li>
           <li><a href="projekte.html">Projects</a></li>
           <li><a href="kontakt.html">Contact</a></li>
-          <li><a href="konfigurator.html">Configurator</a></li>
+          <li><a href="#konfigurator">Configurator</a></li>
         </ul>
       </div>
       <div class="footer-column">

@@ -38,12 +38,12 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-      <a href="konfigurator.html">Konfigurator</a>
+      <a href="#konfigurator">Konfigurator</a>
       <a href="#qualitaet">Qualität</a>
       <a href="#ueberdachungen">Überdachungen</a>
       <a href="projekte.html">Projekte</a>
       <a href="kontakt.html">Kontakt</a>
-      <a href="konfigurator.html" class="btn-konfigurator">Jetzt konfigurieren</a>
+      <a href="#konfigurator" class="btn-konfigurator">Jetzt konfigurieren</a>
       <div class="lang-select" aria-label="Sprache" data-lang-select>
         <button type="button" class="lang-select-current" aria-expanded="false" aria-haspopup="listbox" aria-label="Sprache wählen">
           <span class="flag-de" aria-hidden="true"></span>
@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="hero-buttons">
-          <a href="konfigurator.html" class="btn-primary">
+          <a href="#konfigurator" class="btn-primary">
             <span>Jetzt konfigurieren</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
@@ -108,7 +108,7 @@
         <div class="hero-trust-card">
           <div class="hero-trust-block hero-trust-block-video">
             <span class="hero-trust-label">Erleben Sie uns im Video</span>
-            <a href="werbevideo.html" class="hero-video-cta hero-video-cta-preview">
+            <a href="#video" class="hero-video-cta hero-video-cta-preview">
               <video class="hero-video-cta-bg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
                 <source src="images/werbevideo-preview.mp4" type="video/mp4">
               </video>
@@ -139,6 +139,44 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konfigurator – direkt unter Hero -->
+  <section class="konfigurator-wrap" id="konfigurator" aria-labelledby="konfigurator-heading">
+    <div class="konfigurator-intro reveal">
+      <p class="section-eyebrow">Festpreis in Minuten</p>
+      <h2 id="konfigurator-heading">Ihre Überdachung konfigurieren</h2>
+      <p class="konfigurator-intro-lead">Maße, Modell und Ausstattung wählen – Sie erhalten sofort Ihren individuellen Festpreis. Made in Germany, 10 Jahre Garantie.</p>
+    </div>
+    <iframe
+      src="https://konfigurator.ihre-firma.de"
+      title="Terrassendach-Konfigurator"
+      loading="lazy"
+      allow="fullscreen"
+    ></iframe>
+  </section>
+
+  <!-- Werbevideo – USP auf der Startseite -->
+  <section class="section-home-video" id="video" aria-labelledby="home-video-heading">
+    <div class="section-home-video-inner">
+      <div class="section-home-video-text reveal">
+        <p class="section-eyebrow">Einzigartig am Markt</p>
+        <h2 id="home-video-heading">Terrassendachproduktion erleben</h2>
+        <p class="section-home-video-lead">Sehen Sie, wie unsere Überdachungen entstehen und in nur einem Tag montiert werden – Qualität ab Werk, alles aus einer Hand.</p>
+        <ul class="feature-list">
+          <li>Professionelle Montage durch Fachpartner</li>
+          <li>Deutsche Fertigung in Bonn</li>
+          <li>Über 16.500 zufriedene Kunden</li>
+        </ul>
+      </div>
+      <div class="section-home-video-player reveal">
+        <div class="home-video-wrapper">
+          <video controls playsinline preload="metadata" poster="images/terrassendach-hero-mobil.jpg" title="123 Terrassendach – Überdachungen & Montage">
+            <source src="images/werbevideo-mit-123-terrassendach-logo.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -192,7 +230,7 @@
   </section>
 
 
-  <section class="section-two-col section-qualitaet reveal">
+  <section class="section-two-col section-qualitaet reveal" id="qualitaet">
     <div class="section-image">
       <img src="images/qualitaet.webp" alt="Terrassenüberdachung – deutsche Qualität" width="1200" height="800" loading="lazy">
       <div class="section-image-badge">
@@ -210,7 +248,7 @@
         <li>Zertifizierte Pulverbeschichtung</li>
         <li>10 Jahre Garantie auf jede Überdachung</li>
       </ul>
-      <a href="konfigurator.html" class="btn-inline">Jetzt Konfigurator starten →</a>
+      <a href="#konfigurator" class="btn-inline">Jetzt Konfigurator starten →</a>
     </div>
   </section>
   
@@ -338,7 +376,7 @@
         <li>Montageservice durch zertifizierte Fachpartner</li>
         <li>Clevere Selbstmontage mit Anleitung</li>
       </ul>
-      <a href="konfigurator.html" class="btn-inline">Überdachung konfigurieren →</a>
+      <a href="#konfigurator" class="btn-inline">Überdachung konfigurieren →</a>
     </div>
   </section>
 
@@ -349,7 +387,7 @@
         <p class="section-eyebrow">Unsere Produktlinien</p>
         <h2>Entdecken Sie unsere Kategorien</h2>
         <p class="kategorien-lead">Carport, Terrassendach, Pergola – wählen Sie die Überdachung, die zu Ihrem Zuhause passt. Alle Modelle in deutscher Qualität ab Werk.</p>
-        <a href="konfigurator.html" class="btn-kategorien">Jetzt konfigurieren</a>
+        <a href="#konfigurator" class="btn-kategorien">Jetzt konfigurieren</a>
       </div>
       <div class="kategorien-carousel-wrap reveal">
         <div class="kategorien-carousel" data-carousel>
@@ -396,25 +434,6 @@
     </div>
   </section>
 
-  <!-- Konfigurator -->
-  <section class="section-konfigurator" id="konfigurator">
-    <div class="konfigurator-inner">
-      <div class="section-header section-header-center reveal">
-        <p class="section-eyebrow">Festpreis in Minuten</p>
-        <h2 class="konfigurator-headline">Ihre Überdachung konfigurieren</h2>
-        <p class="konfigurator-lead">In wenigen Klicks zu Ihrer individuellen Lösung – Made in Germany, mit 10 Jahren Garantie.</p>
-      </div>
-      <div class="konfigurator-embed reveal">
-        <iframe
-          src="https://terrassen-berdachung-konfigurator.vercel.app/embed.html"
-          title="Terrassendach Konfigurator"
-          loading="lazy"
-          allow="fullscreen"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA -->
   <section class="hero-stobern" id="onlineshop" style="background-image: url('images/hero-stobern.webp');">
     <div class="hero-stobern-content reveal">
@@ -424,7 +443,7 @@
         <p class="hero-stobern-lead">Konfigurieren Sie Ihre Überdachung online oder lassen Sie sich unverbindlich von unseren Experten beraten.</p>
       </div>
       <div class="hero-stobern-buttons">
-        <a href="konfigurator.html" class="btn-white">Zum Konfigurator</a>
+        <a href="#konfigurator" class="btn-white">Zum Konfigurator</a>
         <a href="kontakt.html" class="btn-orange">Kostenlos beraten lassen</a>
       </div>
     </div>
@@ -454,7 +473,7 @@
           <li><a href="#ueberdachungen">Überdachungen</a></li>
           <li><a href="projekte.html">Projekte</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="konfigurator.html">Konfigurator</a></li>
+          <li><a href="#konfigurator">Konfigurator</a></li>
         </ul>
       </div>
       <div class="footer-column">
